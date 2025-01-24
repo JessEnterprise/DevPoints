@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - EconPoints</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="landing is-preload">
+
+    <!-- Header (Mantém o seu header do index.html, sem mudanças) -->
+
+    <section id="signup">
+        <div class="inner">
+            <h2>Cadastro</h2>
+            <form action="scripts/submit_signup.php" method="POST">
+                <label for="name">Nome Completo</label>
+                <input type="text" name="name" id="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="phone">Telefone</label>
+                <input type="text" name="phone" id="phone" required>
+
+                <label for="address">Endereço</label>
+                <textarea name="address" id="address" required></textarea>
+
+                <label for="password">Senha</label>
+                <input type="password" name="password" id="password" required>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>

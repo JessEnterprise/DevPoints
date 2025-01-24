@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo ao EconPoints</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 60%;
+            max-width: 600px;
+        }
+        .message {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .cta {
+            margin-top: 20px;
+        }
+        .cta a {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .cta a:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="message">
+            <h2>Bem-vindo ao EconPoints, <span id="user-name"></span>!</h2>
+            <p>Você foi cadastrado com sucesso. Agora você pode acessar seus pagamentos, acompanhar sua pontuação e muito mais!</p>
+        </div>
+        
+        <div class="cta">
+            <a href="index.html">Voltar para a Página Principal</a>
+        </div>
+    </div>
+
+    <script>
+        // Captura o nome do usuário da URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const userName = urlParams.get('name');
+        
+        // Exibe o nome na página
+        document.getElementById('user-name').textContent = userName;
+    </script>
+
+</body>
+</html>
