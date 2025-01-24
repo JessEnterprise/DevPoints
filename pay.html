@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagar Agora - EconPoints</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="landing is-preload">
+
+    <!-- Header (Mantém o seu header do index.html, sem mudanças) -->
+
+    <section id="payment">
+        <div class="inner">
+            <h2>Pagar Conta</h2>
+            <form action="scripts/process_payment.php" method="POST">
+                <label for="amount">Valor do Pagamento</label>
+                <input type="number" name="amount" id="amount" required>
+
+                <button type="submit">Pagar Agora</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
